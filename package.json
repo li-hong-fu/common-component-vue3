@@ -5,9 +5,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vue-tsc && vite build && node ./scripts/dns-prefetch.js",
-        "build:pre": "vue-tsc && vite build --mode staging && node ./scripts/dns-prefetch.js",
-        "build:pro": "vue-tsc && vite build --mode production && node ./scripts/dns-prefetch.js",
+        "build": "vue-tsc && vite build",
+        "build:pre": "vue-tsc && vite build --mode staging",
+        "build:pro": "vue-tsc && vite build --mode production",
         "lint:create": "eslint --init",
         "lint": "eslint \"src/**/*.{js,vue,ts}\" --fix",
         "prettier-format": "prettier --config .prettierrc.cjs \"src/**/*.{vue,js,ts}\" --write",
