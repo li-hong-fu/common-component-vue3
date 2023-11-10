@@ -1,6 +1,15 @@
 <template>
-    <el-container>
+    <div>
+        <BasicLayoutSider></BasicLayoutSider>
+        <div class="right-container">
+            <BasicLayoutHeader></BasicLayoutHeader>
+        </div>
+    </div>
+
+    <!-- <el-container>
+        <BasicLayoutSider></BasicLayoutSider>
         <el-container class="right-container">
+            <BasicLayoutHeader></BasicLayoutHeader>
             <el-main id="app-router">
                 <router-view v-slot="{ Component }">
                     <keep-alive>
@@ -11,7 +20,7 @@
                 </router-view>
             </el-main>
         </el-container>
-    </el-container>
+    </el-container> -->
 </template>
 
 <script>

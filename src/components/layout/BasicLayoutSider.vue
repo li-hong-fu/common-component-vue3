@@ -1,4 +1,6 @@
-<template>2</template>
+<template>
+    <div>BasicLayoutSider</div>
+</template>
 
 <script>
 export default {

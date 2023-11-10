@@ -1,8 +1,17 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
-export default createRouter({
-    history: createWebHashHistory(process.env.BASE_URL),
-    routes: [],
+const routes: Array<RouteRecordRaw> = [
+    {
+        path: '/',
+        name: 'Root',
+        component: () => import('../components/layout/BasicLayout.vue'),
+        children: [],
+    },
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
 });
 
-document.title = '系统标题';
+export default router;
