@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: lihongfu
+ * @Date: 2023-11-08 19:13:01
+ * @LastEditTime: 2024-02-02 09:16:28
+ * @LastEditors: lihongfu
+ */
 /**
  * Component组件自动注册
  */
@@ -8,7 +15,7 @@ const install = async (app: App): Promise<void> => {
     const componentPaths = Object.keys(requireComponent);
 
     componentPaths.forEach(async (fileName) => {
-        const componentModule = await requireComponent[fileName]();
+        const componentModule: any = await requireComponent[fileName]();
         const component = (componentModule.default ||
             componentModule) as typeof componentModule.default;
         const componentName = component.name;

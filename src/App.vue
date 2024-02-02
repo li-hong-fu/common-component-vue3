@@ -11,10 +11,6 @@
 <script setup></script>
 
 <style lang="less">
-#app {
-    height: 100%;
-}
-
 .fade-enter-active,
 .fade-leave-active {
     transition: all 0.2s ease;

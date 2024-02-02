@@ -1,12 +1,12 @@
+<!--
+ * @Description: 
+ * @Author: lihongfu
+ * @Date: 2023-11-08 19:13:01
+ * @LastEditTime: 2024-02-02 09:44:49
+ * @LastEditors: lihongfu
+-->
 <template>
-    <div>
-        <BasicLayoutSider></BasicLayoutSider>
-        <div class="right-container">
-            <BasicLayoutHeader></BasicLayoutHeader>
-        </div>
-    </div>
-
-    <!-- <el-container>
+    <el-container>
         <BasicLayoutSider></BasicLayoutSider>
         <el-container class="right-container">
             <BasicLayoutHeader></BasicLayoutHeader>
@@ -20,7 +20,7 @@
                 </router-view>
             </el-main>
         </el-container>
-    </el-container> -->
+    </el-container>
 </template>
 
 <script>

@@ -1,18 +1,77 @@
-# Vue 3 + TypeScript + Vite
+<!--
+ * @Description:
+ * @Author: lihongfu
+ * @Date: 2023-10-31 17:31:32
+ * @LastEditTime: 2024-02-02 10:11:24
+ * @LastEditors: lihongfu
+-->
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# 目录结构
 
-## Recommended IDE Setup
+```
+├─.husky                               hook工具
+│
+├─.vscode
+│  │
+│  └─settings.json                     vscode统一配置
+│
+├─public                               根目录
+│  │
+│  └─vite.svg
+│
+├─scripts
+│   │
+│   └─dns-prefetch.js                  dns预解析
+│
+└─src
+    ├─asset                            资源
+    ├─components
+    |  ├─layout                        布局组件
+    |  |
+    |  └─index.ts                      组件入口（统一自动导入所有组件）
+    |
+    ├─global                           全局文件
+    |  ├─config                        项目配置文件
+    |  |
+    |  ├─interface                     接口文件
+    |  |
+    |  ├─model                         类型规范文件
+    |  |
+    |  ├─request                       请求文件
+    |  |    ├─api.ts
+    |  |    └─axios.ts
+    |  |
+    |  ├─service                       服务
+    |  |
+    |  ├─storage                       本地存储
+    |  |
+    |  └─utils                         公共工具目录
+    |       ├─filters.js               过滤
+    |       └─index.js                 常用公共函数
+    |
+    │
+    ├─router                           路由文件
+    |  ├─index.ts
+    |  ├─routes.ts
+    |  └─permission.js                 路由重定向
+    |
+    ├─store                            Vuex状态管理文件
+    │─views                            视图
+    └─main.ts                          入口文件
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+│─.env                                 开发环境
+│─.env.production                      生产环境
+│─.env.staging                         预发环境
+│─.eslintrc.cjs                        eslint配置
+│─.eslintignore                        eslint过滤配置
+│─.gitignore                           git过滤配置
+│─.prettierignore                      代码风格过滤配置
+│─.prettierrc.cjs                      代码风格配置
+│─.stylelintignore                     样式风格过滤配置
+│─.stylelintrc.cjs                     样式风格配置
+│─commitlint.config.cjs                git提交注释校验
+│─package.json                         包配置文件
+│─README.md                            备注
+│─tailwind.config.js                   Tailwind CSS配置
+│─vite.config.ts                       脚手架配置文件
+```
